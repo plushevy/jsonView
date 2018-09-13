@@ -10,26 +10,15 @@
 </head>
 
 <body>
-  <!-- вставка svg инлайново -->
-  <!-- <div style="display:none">
-    <include src="img/sprite.svg"></include>
-  </div> -->
+  <p>Вставьте JSON</p>
+  <textarea id="source" class="source" rows="10" cols="50">
+    {"err":false,"msg":"ok","data":[{"Resolution":"DeclineNamePrincipal","Subject":{"Merchant":{"Name":"OOO GOLDI","DoingBusinessAsName":"OOO \"GOLDI\"","AddedByAcquirerID":"15492","AddedOnDate":"10/04/2017","TerminationReasonCode":"13","PhoneNumber":"79811976823","Address":{"Line1":"PROSPEKT VLADIMIRSKIJ, D. 19, L. A, POM. 114","City":"SANKT-PETERBURG","Country":"RUS"},"Principal":[{"FirstName":"ANDREJ","LastName":"KAYUROV"}]},"MerchantMatch":{"Name":"M01","Address":"M02","PhoneNumber":"M01","PrincipalMatch":[{"Name":"M01","Address":"M00","PhoneNumber":"M00"}]}}},{"Resolution":"DeclinePrincipal","Subject":{"Merchant":{"Name":"MILANO SHOP","DoingBusinessAsName":"GOLDI LTD","AddedByAcquirerID":"5761","AddedOnDate":"09/17/2017","TerminationReasonCode":"11","PhoneNumber":"9811976608","Address":{"Line1":"VLADIMIRSKIY AV 19-A POM 114","City":"SAINT-PETERSBURG","Country":"RUS"},"Principal":[{"FirstName":"VERA","LastName":"PANKINA"},{"FirstName":"ANDREJ","LastName":"KAYUROV"}]},"MerchantMatch":{"Name":"M00","Address":"M00","PhoneNumber":"M00","PrincipalMatch":[{"Name":"M00","Address":"M00","PhoneNumber":"M00"},{"Name":"M01","Address":"M00","PhoneNumber":"M00"}]}}}]}
+      </textarea>
+  <br />
+  <input type="button" id="show-btn" class="show-btn" value="Показать" />
+  <br />
 
-<!-- вставка картинок в формате WebP-->
-  <!-- <picture>
-    <source srcset="opera.webp" type="image/webp">
-    <img src="opera.jpg" alt="The Oslo Opera House">
-  </picture> -->
-
-  <!-- header -->
-  <include src="templates/header.html"></include>
-
-  <main class="main">
-    <h1>Clean-Start-Template v 0.1.0</h1>
-  </main>
-
-  <!-- footer -->
-  <include src="templates/footer.html"></include>
+  <div class="container" id="container">Загрузка...</div>
 
   <script src="/js/scripts.min.js"></script>
 </body>

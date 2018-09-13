@@ -1,14 +1,9 @@
-@import "normalize";
-@import "variables";
-@import "fonts";
-@import "mixins";
-@import "base";
-@import "blocks/header";
-@import "blocks/footer";
-h1 {
-  color: green;
-}
+// @import "normalize";
+// @import "variables";
+// @import "fonts";
+// @import "mixins";
+// @import "base";
+// @import "blocks/header";
+// @import "blocks/footer";
 
-b {
-  color: blue;
-}
+@import "tree";

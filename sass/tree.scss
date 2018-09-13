@@ -1,0 +1,103 @@
+body {
+  background-color: #DDDDDD;
+  font: 14px sans-serif;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+
+textarea {
+  margin: 0;
+  padding: 5px;
+}
+
+.error {
+  color: red;
+}
+
+
+.tree {
+
+  &__value {
+
+    &--collapsed {
+      &>ul {
+        display: none !important;
+      }
+
+      & .tree__toggle::before {
+        content: '+';
+      }
+
+      & .tree__toggle-end--obj::before {
+        content: '...';
+        display: inline;
+      }
+
+      & .tree__toggle-end--array::before {
+        content: attr(data-length);
+        display: inline;
+      }
+
+
+    }
+  }
+
+  &__toggle {
+    position: relative;
+    cursor: pointer;
+    border: solid 1px transparent;
+
+    &::before {
+      content: '-';
+      border-radius: 2px;
+      border-color: #AAA;
+      border-style: solid;
+      border-width: .1em;
+      color: #AAA;
+      display: inline-block;
+      line-height: 7px;
+      margin: 0 2px;
+      overflow: hidden;
+      padding: 0;
+    }
+
+    &--array {
+      &::before {
+        border-color: #a40000;
+        color: #a40000;
+      }
+    }
+
+    &--obj {
+      &::before {
+        border-color: #729fcf;
+        color: #729fcf;
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+      font-weight: 700;
+
+      &~.tree__toggle-end {
+        font-weight: 700;
+      }
+
+      &::before {
+        font-weight: 400;
+      }
+
+      &+ul {
+        opacity: .3;
+      }
+    }
+
+
+  }
+
+}

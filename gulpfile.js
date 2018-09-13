@@ -142,9 +142,9 @@ gulp.task('sprite', function () {
 
 gulp.task('html', function () {
   return gulp.src(config.src + config.html.src)
-    .pipe(posthtml([
-      include()
-    ]))
+    // .pipe(posthtml([
+    //   include()
+    // ]))
     .pipe(gulp.dest(config.build))
     .pipe(server.stream());
 });
@@ -188,9 +188,9 @@ gulp.task('serve', function () {
 gulp.task('build', function (done) {
   run(
     'clean',
-    'copy',
+    // 'copy',
     'style',
-    'sprite',
+    // 'sprite',
     'html',
     'js',
     done

@@ -1,27 +1,21 @@
 {
-  "name": "quick-start-clean-project",
+  "name": "jsonview",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run build && gulp serve",
     "build": "gulp build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/plushevy/quick-start-clean-project.git"
-  },
+
   "keywords": [
     "clean",
     "project"
   ],
   "author": "Ilia Molchanov",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/plushevy/quick-start-clean-project/issues"
-  },
-  "homepage": "https://github.com/plushevy/quick-start-clean-project#readme",
+
   "devDependencies": {
     "autoprefixer": "^9.1.1",
     "browser-sync": "^2.24.6",
